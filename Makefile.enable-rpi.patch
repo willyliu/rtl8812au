@@ -1,0 +1,20 @@
+diff --git a/Makefile b/Makefile
+index 593d3da..13aea02 100755
+--- a/Makefile
++++ b/Makefile
+@@ -85,8 +85,8 @@ CONFIG_RTW_SDIO_PM_KEEP_POWER = y
+ ###################### MP HW TX MODE FOR VHT #######################
+ CONFIG_MP_VHT_HW_TX_MODE = n
+ ###################### Platform Related #######################
+-CONFIG_PLATFORM_I386_PC = y
+-CONFIG_PLATFORM_ARM_RPI = n
++CONFIG_PLATFORM_I386_PC = n
++CONFIG_PLATFORM_ARM_RPI = y
+ CONFIG_PLATFORM_ANDROID_X86 = n
+ CONFIG_PLATFORM_ANDROID_INTEL_X86 = n
+ CONFIG_PLATFORM_JB_X86 = n
+@@ -1882,4 +1882,3 @@ clean:
+ 	rm -fr *.mod.c *.mod *.o .*.cmd *.ko *~
+ 	rm -fr .tmp_versions
+ endif
+-
