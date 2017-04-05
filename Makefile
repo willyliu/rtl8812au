@@ -67,10 +67,10 @@ CONFIG_WIFI_MONITOR = n
 CONFIG_MCC_MODE = n
 CONFIG_APPEND_VENDOR_IE_ENABLE = n
 ########################## Debug ###########################
-CONFIG_RTW_DEBUG = y
+CONFIG_RTW_DEBUG = n
 # default log level is _DRV_INFO_ = 4,
 # please refer to "How_to_set_driver_debug_log_level.doc" to set the available level.
-CONFIG_RTW_LOG_LEVEL = 4
+CONFIG_RTW_LOG_LEVEL = 2
 ######################## Wake On Lan ##########################
 CONFIG_WOWLAN = n
 CONFIG_GPIO_WAKEUP = n
@@ -202,7 +202,7 @@ _HAL_INTFS_FILES :=	hal/hal_intf.o \
 			hal/hal_hci/hal_$(HCI_NAME).o \
 			hal/led/hal_$(HCI_NAME)_led.o
 
-			
+
 _OUTSRC_FILES := hal/phydm/phydm_debug.o	\
 		hal/phydm/phydm_antdiv.o\
 		hal/phydm/phydm_antdect.o\
@@ -276,7 +276,7 @@ EXTRA_CFLAGS += -DCONFIG_RTL8188E
 
 _HAL_INTFS_FILES +=	hal/HalPwrSeqCmd.o \
 					hal/$(RTL871X)/Hal8188EPwrSeq.o\
- 					hal/$(RTL871X)/$(RTL871X)_xmit.o\
+					hal/$(RTL871X)/$(RTL871X)_xmit.o\
 					hal/$(RTL871X)/$(RTL871X)_sreset.o
 
 _HAL_INTFS_FILES +=	hal/$(RTL871X)/$(RTL871X)_hal_init.o \
@@ -493,7 +493,7 @@ _OUTSRC_FILES += hal/phydm/rtl8821a/halhwimg8821a_fw.o\
 		hal/phydm/rtl8821a/phydm_rtl8821a.o\
 		hal/phydm/rtl8821a/phydm_iqk_8821a_ce.o\
 		hal/phydm/txbf/haltxbfjaguar.o
-		
+
 endif
 
 endif
@@ -1762,7 +1762,7 @@ ARCH := arm
 CROSS_COMPILE := /home/android_sdk/Telechips/v13.05_r1-tcc-android-4.2.2_tcc893x-evm_build/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
 KSRC := /home/android_sdk/Telechips/v13.05_r1-tcc-android-4.2.2_tcc893x-evm_build/kernel
 MODULE_NAME := wlan
-endif 
+endif
 
 ifeq ($(CONFIG_MULTIDRV), y)
 
@@ -1814,7 +1814,7 @@ rtk_core :=	core/rtw_cmd.o \
 		core/rtw_btcoex.o \
 		core/rtw_beamforming.o \
 		core/rtw_odm.o \
-		core/efuse/rtw_efuse.o 
+		core/efuse/rtw_efuse.o
 
 ifeq ($(CONFIG_SDIO_HCI), y)
 rtk_core += core/rtw_sdio.o
@@ -1882,4 +1882,3 @@ clean:
 	rm -fr *.mod.c *.mod *.o .*.cmd *.ko *~
 	rm -fr .tmp_versions
 endif
-

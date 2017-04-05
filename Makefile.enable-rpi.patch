@@ -13,8 +13,3 @@ index 593d3da..13aea02 100755
  CONFIG_PLATFORM_ANDROID_X86 = n
  CONFIG_PLATFORM_ANDROID_INTEL_X86 = n
  CONFIG_PLATFORM_JB_X86 = n
-@@ -1882,4 +1882,3 @@ clean:
- 	rm -fr *.mod.c *.mod *.o .*.cmd *.ko *~
- 	rm -fr .tmp_versions
- endif
--
