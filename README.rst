@@ -9,6 +9,9 @@ patches from diederikdehaas/rtl8812AU to build it on RPi / ArchLinuxARM.
 | For ArchLinuxARM PKGBUILD for Raspberry Pi (armv7h), see:
 |   https://github.com/mk-fg/archlinux-pkgbuilds/tree/master/rtl8812au-5.1.5-rpi-git
 
+Note that I'm not supporting or developing this driver here, just collected a
+bunch of ad-hoc patches from different sources for my own purposes.
+
 
 Links
 -----
