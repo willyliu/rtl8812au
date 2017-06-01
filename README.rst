@@ -4,10 +4,11 @@ rtl8812au
 Linux kernel driver for rtl8812au/rtl8821au/rtl8811au USB WiFi chipsets.
 
 Experimental build of driver-5.1.5 branch from uminokoe/rtl8812AU, with some
-patches from diederikdehaas/rtl8812AU to build it on RPi / ArchLinuxARM.
+patches from diederikdehaas/rtl8812AU to build it on ArchLinuxARM.
 
-| For ArchLinuxARM PKGBUILD for Raspberry Pi (armv7h), see:
-|   https://github.com/mk-fg/archlinux-pkgbuilds/tree/master/rtl8812au-5.1.5-rpi-git
+For ArchLinuxARM PKGBUILDs for Raspberry Pi (armv7h) and ODROID-C2 (aarch64), see:
+- https://github.com/mk-fg/archlinux-pkgbuilds/tree/master/rtl8812au-5.1.5-rpi-git
+- https://github.com/mk-fg/archlinux-pkgbuilds/tree/master/rtl8812au-5.1.5-odc2-git
 
 Note that I'm not supporting or developing this driver here, just collected a
 bunch of ad-hoc patches from different sources for my own purposes.
