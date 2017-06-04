@@ -15,6 +15,9 @@ For ArchLinuxARM PKGBUILDs for Raspberry Pi 2/3 (armv7h) and ODROID-C2
 Note that I'm not supporting or developing this driver here, just collected a
 bunch of ad-hoc patches from different sources for my own purposes.
 
+Please do not ask me to add or merge additional featues or fix something here -
+I'm not a kernel developer and don't even have hardware to test this locally.
+
 
 Performance
 -----------
