@@ -13,10 +13,10 @@ Experimental build of driver-5.1.5 branch from uminokoe/rtl8812AU, with some
 patches from diederikdehaas/rtl8812AU to build it on ArchLinuxARM.
 
 For ArchLinuxARM PKGBUILDs of module from this repo for Raspberry Pi 2/3
-(armv7h) and ODROID-C2 (aarch64), see:
+(armv7h) and ODROID-C2 (aarch64), applies the patches:
 
-- https://github.com/mk-fg/archlinux-pkgbuilds/tree/master/rtl8812au-5.1.5-rpi-git
-- https://github.com/mk-fg/archlinux-pkgbuilds/tree/master/rtl8812au-5.1.5-odc2-git
+- patch < Makefile.enable-rpi.patch
+- patch < Makefile.enable-odc2.patch
 
 Note that I'm not supporting or developing this driver here, just collected a
 bunch of ad-hoc patches from different sources for my own purposes.
@@ -24,6 +24,9 @@ bunch of ad-hoc patches from different sources for my own purposes.
 Please do not ask me to add or merge additional featues or fix something here -
 I'm not a kernel developer and don't even have hardware to test this locally.
 
+Based on the include/rtw_version.h, the version is 5.1.5.
+
+Supported usb dongles is listed in os_dep/linux/usb_intf.c.
 
 Performance
 -----------
