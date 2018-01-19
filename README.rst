@@ -1,11 +1,11 @@
 rtl8812au for Raspbery Pi
-========================
-
-# Usage:
-```
+=========================
+Usage:
+------
+``
 make
 sudo make install
-```
+``
 
 Linux kernel driver for rtl8812au/rtl8821au/rtl8811au USB WiFi chipsets.
 
