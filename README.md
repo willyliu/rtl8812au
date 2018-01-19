@@ -1,6 +1,7 @@
 rtl8812au for Raspbery Pi
 ========================
 
+# Usage:
 ```
 make
 sudo make install
