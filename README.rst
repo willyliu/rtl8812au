@@ -1,5 +1,5 @@
-rtl8812au
-=========
+rtl8812au for Raspbery Pi
+========================
 
 # Just do it
 ```
@@ -11,12 +11,6 @@ Linux kernel driver for rtl8812au/rtl8821au/rtl8811au USB WiFi chipsets.
 
 Experimental build of driver-5.1.5 branch from uminokoe/rtl8812AU, with some
 patches from diederikdehaas/rtl8812AU to build it on ArchLinuxARM.
-
-For ArchLinuxARM PKGBUILDs of module from this repo for Raspberry Pi 2/3
-(armv7h) and ODROID-C2 (aarch64), applies the patches:
-
-- patch < Makefile.enable-rpi.patch
-- patch < Makefile.enable-odc2.patch
 
 Note that I'm not supporting or developing this driver here, just collected a
 bunch of ad-hoc patches from different sources for my own purposes.
